@@ -1,0 +1,9 @@
+
+# Generated website
+/dist/
+/book/
+
+# Temporary files
+*.bak
+shiroa_academic_pages.zip
+shiroa_pages_package/

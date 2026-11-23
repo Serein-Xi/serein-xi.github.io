@@ -1,0 +1,58 @@
+
+name: Deploy Shiroa Website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Shiroa
+        run: |
+          curl --proto '=https' --tlsv1.2 -LsSf \
+            https://github.com/Myriad-Dreamin/shiroa/releases/download/v0.3.0/shiroa-installer.sh \
+            -o /tmp/shiroa-installer.sh
+
+          sh /tmp/shiroa-installer.sh
+
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Build website
+        run: |
+          shiroa --version
+          shiroa build --path-to-root / --dest-dir dist
+          test -f dist/index.html
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
