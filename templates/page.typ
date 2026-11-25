@@ -131,13 +131,27 @@
   // link setting
   show link: set text(fill: dash-color)
 
-  // math setting
-  show math.equation: set text(weight: 400)
-  show math.equation: context if shiroa-sys-target() == "html" {
-    div-frame.with(attrs: ("style": "display: flex; justify-content: center; overflow-x: auto;"))
+  
+// math setting
+show math.equation: set text(weight: 400)
+
+show math.equation: it => context {
+  if shiroa-sys-target() == "html" {
+    if it.block {
+      div-frame(
+        it,
+        attrs: (
+          "style": "display: flex; justify-content: center; overflow-x: auto;",
+        ),
+      )
+    } else {
+      html.elem("span", html.frame(it))
+    }
   } else {
-    it => it
+    it
   }
+}
+
 
   /// HTML code block supported by zebraw.
   show: if is-dark-theme {
