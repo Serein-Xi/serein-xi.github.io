@@ -17,9 +17,12 @@
 
     - #chapter("news.typ")[News]
     - #chapter("research.typ")[Research]
-      - #chapter("research/xenonnt.typ")[XENONnT Detector Response]
-      - #chapter("research/solar-pp.typ")[Solar pp Neutrino ACE]
-    - #chapter("publications.typ")[Publications & Presentations]
+    - #chapter("projects.typ")[Projects]
+      - #chapter("projects/solar-pp.typ")[Solar pp Analysis]
+      - #chapter("projects/xenonnt-calibration.typ")[XENONnT Calibration]
+      - #chapter("projects/discrete-diffusion.typ")[Discrete Diffusion & Metastability]
+      - #chapter("projects/potts-phase-transitions.typ")[Potts Phase Transitions]
+      - #chapter("projects/airy-wkb.typ")[Airy Equation & WKB]
     - #chapter("about.typ")[About Me]
 
     = Research Notes

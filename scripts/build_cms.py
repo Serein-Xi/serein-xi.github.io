@@ -13,8 +13,19 @@ CONTENT = ROOT / "content" / "pages"
 OUT = ROOT / "generated"
 
 PAGES = [
-    "intro", "news", "research", "research/xenonnt", "research/solar-pp",
-    "publications", "about", "notes/xenonnt", "notes/qft", "notes/statphys",
+    'intro',
+    'news',
+    'research',
+    'projects',
+    'projects/solar-pp',
+    'projects/xenonnt-calibration',
+    'projects/discrete-diffusion',
+    'projects/potts-phase-transitions',
+    'projects/airy-wkb',
+    'about',
+    'notes/xenonnt',
+    'notes/qft',
+    'notes/statphys',
 ]
 
 

@@ -29,21 +29,6 @@ collections:
         file: content/pages/research.md
         fields:
           - { name: body, label: Page content, widget: richtext }
-      - name: xenonnt
-        label: XENONnT Detector Response
-        file: content/pages/research/xenonnt.md
-        fields:
-          - { name: body, label: Page content, widget: richtext }
-      - name: solarpp
-        label: Solar pp Neutrino ACE
-        file: content/pages/research/solar-pp.md
-        fields:
-          - { name: body, label: Page content, widget: richtext }
-      - name: publications
-        label: Publications and Presentations
-        file: content/pages/publications.md
-        fields:
-          - { name: body, label: Page content, widget: richtext }
       - name: about
         label: About Me
         file: content/pages/about.md
@@ -62,5 +47,41 @@ collections:
       - name: note_statphys
         label: Notes · Statistical Physics
         file: content/pages/notes/statphys.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+
+  - name: projects
+    label: Projects
+    label_singular: Project Page
+    format: raw
+    files:
+      - name: overview
+        label: 'Projects Overview'
+        file: content/pages/projects.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: solar_pp
+        label: 'Solar-pp Analysis: Event Reconstruction & Cut Acceptance'
+        file: content/pages/projects/solar-pp.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: xenonnt_calibration
+        label: 'XENONnT Detector Calibration & Energy Reconstruction'
+        file: content/pages/projects/xenonnt-calibration.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: discrete_diffusion
+        label: 'Probing Metastability and Free-Energy Barriers with Discrete Diffusion Models'
+        file: content/pages/projects/discrete-diffusion.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: potts_phase_transitions
+        label: 'Machine-Learning Detection of Potts-Model Phase Transitions'
+        file: content/pages/projects/potts-phase-transitions.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: airy_wkb
+        label: 'Numerical Analysis of the Airy Equation in the WKB Approximation'
+        file: content/pages/projects/airy-wkb.md
         fields:
           - { name: body, label: Page content, widget: richtext }

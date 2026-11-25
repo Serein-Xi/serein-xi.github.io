@@ -29,4 +29,4 @@ This project investigates the probability that a simulated low-energy interactio
 
 ## Project Pages
 
-Detailed technical overviews are organized under *Research* in the sidebar. The public pages describe research aims and methods; collaboration-restricted results are not posted here.
+Detailed technical overviews are organized under [Projects](/projects.html) in the sidebar. The public pages describe research aims and methods; collaboration-restricted results are not posted here.
