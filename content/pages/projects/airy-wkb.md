@@ -1,5 +1,7 @@
 # Numerical Analysis of the Airy Equation in the WKB Approximation
 
+[Course Report (PDF)](https://serein-xi.github.io/assets/uploads/airy-project.pdf)
+
 ## Overview
 
 This computational physics project studies numerical solutions of the Airy equation in the context of the Wentzel–Kramers–Brillouin (WKB) approximation near a classical turning point.
