@@ -16,7 +16,7 @@ The reconstructed energy depends on the detector response to scintillation photo
 
 A commonly used combined-energy relation is
 
-$E = W \left(\frac{\mathrm{S1}}{g_1}+\frac{\mathrm{S2}}{g_2}\right)$,
+$$E = W \left(\frac{\mathrm{S1}}{g_1}+\frac{\mathrm{S2}}{g_2}\right)$$,
 
 where $W$ is the average work function for producing a quantum, $g_1$ is the detected S1 signal per produced scintillation photon, and $g_2$ is the detected S2 signal per produced ionization electron.
 
