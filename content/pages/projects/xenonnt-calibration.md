@@ -1,4 +1,8 @@
-# XENONnT Detector Calibration & Energy Reconstruction
+# XENONnT Detector Calibration & Energy Resolution
+
+[Course Report (Energy Calibration) (PDF)](https://serein-xi.github.io/assets/uploads/calibration-project.pdf)
+
+[Course Report (Energy Resolution & Bias) (PDF)](https://serein-xi.github.io/assets/uploads/resolution-project.pdf)
 
 ## Overview
 
