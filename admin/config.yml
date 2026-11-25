@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: Serein-Xi/serein-xi.github.io
+  branch: main
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: site_pages
+    label: Website Pages
+    label_singular: Page
+    format: raw
+    files:
+      - name: home
+        label: Home / Introduction
+        file: content/pages/intro.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: news
+        label: News
+        file: content/pages/news.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: research
+        label: Research Overview
+        file: content/pages/research.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: xenonnt
+        label: XENONnT Detector Response
+        file: content/pages/research/xenonnt.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: solarpp
+        label: Solar pp Neutrino ACE
+        file: content/pages/research/solar-pp.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: publications
+        label: Publications and Presentations
+        file: content/pages/publications.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: about
+        label: About Me
+        file: content/pages/about.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: note_xenonnt
+        label: Notes · XENONnT
+        file: content/pages/notes/xenonnt.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: note_qft
+        label: Notes · Quantum Field Theory
+        file: content/pages/notes/qft.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }
+      - name: note_statphys
+        label: Notes · Statistical Physics
+        file: content/pages/notes/statphys.md
+        fields:
+          - { name: body, label: Page content, widget: richtext }

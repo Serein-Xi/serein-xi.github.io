@@ -7,3 +7,7 @@
 *.bak
 shiroa_academic_pages.zip
 shiroa_pages_package/
+
+# CMS: derived files and migration backups
+/generated/
+/.cms-backup/

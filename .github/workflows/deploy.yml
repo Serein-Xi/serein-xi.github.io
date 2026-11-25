@@ -39,11 +39,21 @@ jobs:
           echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
+      - name: Prepare CMS content
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+          python3 scripts/build_cms.py
+
       - name: Build website
         run: |
           shiroa --version
           shiroa build --path-to-root / --dest-dir dist
           test -f dist/index.html
+          cp -a admin dist/admin
+          if [ -d assets ]; then cp -a assets dist/assets; fi
+          touch dist/.nojekyll
+          test -f dist/admin/index.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
