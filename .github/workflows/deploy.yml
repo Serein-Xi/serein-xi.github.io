@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -58,10 +59,34 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
+
+      - name: Wait for artifact availability
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 20); do
+            count=$(gh api \
+              "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" \
+              --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length' \
+              || echo 0)
+
+            if [ "$count" -gt 0 ]; then
+              echo "Artifact is available."
+              sleep 3
+              exit 0
+            fi
+
+            echo "Waiting for artifact ($i/20)..."
+            sleep 5
+          done
+
+          echo "Artifact not available in time."
+          exit 1
 
       - name: Deploy website
         id: deployment
