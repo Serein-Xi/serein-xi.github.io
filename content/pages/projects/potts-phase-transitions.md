@@ -1,5 +1,13 @@
 # Machine-Learning Detection of Potts-Model Phase Transitions
 
+
+[Course Report (PDF)](/assets/uploads/potts-project.pdf)
+|
+[Source Code (GitHub)](你的代码仓库地址)
+
+---
+
+
 ## Overview
 
 This project explores how machine-learning methods can identify phase transitions in the two-dimensional q-state Potts model and how their predictions depend on system size and model parameters.
@@ -18,7 +26,3 @@ The Potts model provides a controlled setting in which continuous and first-orde
 ## Discussion
 
 A useful diagnostic should recover the physical transition rather than simply memorize the arbitrary numerical labels assigned to spin states. Comparisons across different lattice sizes and transition regimes help assess its robustness.
-
-## Project Materials
-
-Course report, figures, and code links can be added here.
