@@ -11,3 +11,6 @@ shiroa_pages_package/
 # CMS: derived files and migration backups
 /generated/
 /.cms-backup/
+
+# Windows download metadata
+*:Zone.Identifier
