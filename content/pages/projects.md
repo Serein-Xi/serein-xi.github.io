@@ -2,11 +2,11 @@
 
 A selection of my research and computational physics projects, ranging from experimental particle physics to statistical and semiclassical physics.
 
-## [Solar-pp Analysis: Event Reconstruction & Cut Acceptance](/projects/solar-pp.html)
+## [Solar-pp Analysis: ACE Efficiency & Cut Acceptance](/projects/solar-pp.html)
 
 Waveform-level simulation and signal injection to study reconstruction and selection efficiency for solar pp neutrinos.
 
-## [XENONnT Detector Calibration & Energy Reconstruction](/projects/xenonnt-calibration.html)
+## [XENONnT Detector Calibration & Energy Resolution](/projects/xenonnt-calibration.html)
 
 Cross-run detector response, light and charge gains, energy reconstruction, and resolution.
 
