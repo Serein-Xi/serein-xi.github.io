@@ -32,6 +32,6 @@ My longer-term interests include dark matter detection, neutrino physics, rare-e
 
 GitHub: [Serein-Xi](https://github.com/Serein-Xi)
 
-Email: _Add your preferred public academic email address here._
+Email: zixichen@link.cuhk.edu.cn
 
 CV: _Add a PDF link once your public CV is ready._
