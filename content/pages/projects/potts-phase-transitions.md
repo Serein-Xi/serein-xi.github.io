@@ -1,11 +1,7 @@
 # Machine-Learning Detection of Potts-Model Phase Transitions
 
 
-[Course Report (PDF)](/assets/uploads/potts-project.pdf)
-|
-[Source Code (GitHub)](你的代码仓库地址)
-
----
+[Course Report (PDF)](https://serein-xi.github.io/assets/uploads/potts-project.pdf)
 
 
 ## Overview
