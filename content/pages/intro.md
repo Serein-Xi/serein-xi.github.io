@@ -4,8 +4,8 @@
 
 The Chinese University of Hong Kong, Shenzhen
 
-*Experimental Particle Physics* \
-Dark Matter Detection · Neutrino Physics · Detector Response
+_Experimental Particle Physics_ \
+Dark Matter Detection · Neutrinoless Double Beta-Decay (0$\nu\beta\beta$) · Long-baseline Neutrino Oscillation Experiments
 
 ## About Me
 
